@@ -80,9 +80,11 @@ export default function App() {
     //   </Stack.Navigator>
     // </NavigationContainer>
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName='Timer'>
+      <Drawer.Navigator initialRouteName='Logout'>
         <Drawer.Screen name='Timer' component={TimerScreen} />
         <Drawer.Screen name='Reward' component={RewardScreen} />
+        <Drawer.Screen name='Logout' component={LoginScreen} />
+        <Drawer.Screen name='💎 ✋ 🏡' component={RegistrationScreen} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

@@ -23,45 +23,45 @@ export default function TimerScreen(props) {
   const [key, setKey] = useState(0);
   const [duration, setDuration] = useState(0);
   const [total, setTotal] = useState(50);
-  const [money, setMoney] = useState("");
+  const [money, setMoney] = useState(1000);
   let [fontsLoaded] = useFonts({
     RobotoCondensed_400Regular,
   });
 
-  useEffect(() => {
-    retrieveData();
-  }, [money]);
+  // useEffect(() => {
+  //   retrieveData();
+  // }, [money]);
 
-  const setOnComplete = async () => {
+  const setOnComplete = () => {
     setTotal(1 + total);
-    setMoney((parseInt(money) + 20).toString());
-    storeData((parseInt(money) + 20).toString());
+    const newMoney = Number((duration / 3600) * 100) + money;
+    setMoney(newMoney);
   };
 
-  const storeData = async () => {
-    try {
-      console.log("storing this value: ", money);
-      await AsyncStorage.setItem("@money", money);
-      console.log("saved");
-    } catch (error) {
-      // Error saving data
-      console.log("not saved");
-    }
-  };
+  // const storeData = async () => {
+  //   try {
+  //     console.log("storing this value: ", money);
+  //     await AsyncStorage.setItem("@money", money);
+  //     console.log("saved");
+  //   } catch (error) {
+  //     // Error saving data
+  //     console.log("not saved");
+  //   }
+  // };
 
-  const retrieveData = async () => {
-    try {
-      const value = await AsyncStorage.getItem("@money");
-      if (value !== null) {
-        // We have data!!
-        console.log("got data: ", value);
-        setMoney(value);
-      }
-    } catch (error) {
-      // Error retrieving data
-      console.log("no data");
-    }
-  };
+  // const retrieveData = async () => {
+  //   try {
+  //     const value = await AsyncStorage.getItem("@money");
+  //     if (value !== null) {
+  //       // We have data!!
+  //       console.log("got data: ", value);
+  //       setMoney(value);
+  //     }
+  //   } catch (error) {
+  //     // Error retrieving data
+  //     console.log("no data");
+  //   }
+  // };
 
   return (
     <View style={styles.container}>

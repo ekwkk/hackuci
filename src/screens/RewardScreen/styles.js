@@ -59,4 +59,21 @@ export default StyleSheet.create({
   cointext: {
     color: "white",
   },
+  modalview: {
+    backgroundColor: "white",
+    borderRadius: 10,
+    padding: 10,
+  },
+  modaltext: {
+    padding: 10,
+    fontSize: 18,
+    fontFamily: "RobotoCondensed_700Bold",
+    textAlign: "center",
+  },
+  modaltext1: {
+    padding: 10,
+    fontSize: 16,
+    textAlign: "center",
+    fontFamily: "RobotoCondensed_400Regular",
+  },
 });
