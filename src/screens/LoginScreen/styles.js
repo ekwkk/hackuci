@@ -6,8 +6,8 @@ export default StyleSheet.create({
     alignItems: "center",
   },
   title: {
-    fontFamily: "RobotoCondensed_700Bold",
-    fontSize: 30,
+    fontWeight: "bold",
+    fontSize: 32,
   },
   subtitle: {
     marginTop: 10,
