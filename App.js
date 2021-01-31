@@ -8,6 +8,7 @@ import {
   TimerScreen,
   RegistrationScreen,
   RewardScreen,
+  StatusScreen,
 } from "./src/screens";
 import { decode, encode } from "base-64";
 if (!global.btoa) {
@@ -83,6 +84,7 @@ export default function App() {
       <Drawer.Navigator initialRouteName='Logout'>
         <Drawer.Screen name='Timer' component={TimerScreen} />
         <Drawer.Screen name='Reward' component={RewardScreen} />
+        <Drawer.Screen name='Kitties' component={StatusScreen} />
         <Drawer.Screen name='Logout' component={LoginScreen} />
         <Drawer.Screen name='💎 ✋ 🏡' component={RegistrationScreen} />
       </Drawer.Navigator>

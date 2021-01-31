@@ -93,14 +93,14 @@ export default function RewardScreen(props) {
       <View style={styles.container1}>
         <View style={styles.wrapper}>
           <Image
-            source={require("../../../assets/doordash.png")}
+            source={require("../../../assets/tesla.png")}
             style={styles.imgimg}
             height={50}
           />
           <View style={styles.texts}>
-            <Text style={{ color: "gray" }}>DOORDASH</Text>
-            <Text>20% Off on Order Over $30</Text>
-            <Text style={{ color: "gray" }}>200 quarancoins</Text>
+            <Text style={{ color: "gray" }}>TESLA</Text>
+            <Text>0.0001 Share of $TSLA 🚀 💎 💸 </Text>
+            <Text style={{ color: "gray" }}>1000 quarancoins</Text>
           </View>
         </View>
       </View>

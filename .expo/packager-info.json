@@ -3,8 +3,8 @@
   "expoServerPort": 19000,
   "packagerPort": 19000,
   "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
+  "expoServerNgrokUrl": "https://hr-xpe.anonymous.hackuci.exp.direct",
+  "packagerNgrokUrl": "https://packager.hr-xpe.anonymous.hackuci.exp.direct",
+  "ngrokPid": 91537,
   "webpackServerPort": null
 }
